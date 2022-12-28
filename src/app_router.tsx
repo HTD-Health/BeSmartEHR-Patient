@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import FormsList from './pages/forms_list/forms_list';
 import Home from './pages/home/home';
@@ -12,14 +12,14 @@ export const routes = {
 };
 
 const AppRouter = (): JSX.Element => (
-    <HashRouter basename={process.env.REACT_APP_REPO_NAME}>
+    <BrowserRouter basename={process.env.REACT_APP_REPO_NAME}>
         <Routes>
             <Route path={routes.root} element={<Home />} />
             <Route path={routes.assignedList} element={<FormsList status="ready" sort="-authored-on" />} />
             <Route path={routes.filledList} element={<FormsList status="completed" sort="-modified" />} />
             <Route path={routes.responseView} element={<ResponseView />} />
         </Routes>
-    </HashRouter>
+    </BrowserRouter>
 );
 
 export default AppRouter;
