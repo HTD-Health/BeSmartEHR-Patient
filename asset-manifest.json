@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/BeSmartEhR-Patient/static/js/main.bcdd2c7c.js",
+    "static/js/787.8f52f6da.chunk.js": "/BeSmartEhR-Patient/static/js/787.8f52f6da.chunk.js",
+    "index.html": "/BeSmartEhR-Patient/index.html",
+    "main.bcdd2c7c.js.map": "/BeSmartEhR-Patient/static/js/main.bcdd2c7c.js.map",
+    "787.8f52f6da.chunk.js.map": "/BeSmartEhR-Patient/static/js/787.8f52f6da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bcdd2c7c.js"
+  ]
+}
