@@ -9,14 +9,11 @@ const StandaloneWrapper = (): JSX.Element => {
 
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<any>(null);
-    console.log('StandaloneWrapper');
 
     useEffect(() => {
-        console.log('pre useEffect');
         // Epic does not allow init twice (token request returns 400)
         // React in development renders twice (StrictMode) so we need a flag
         if (initialized.current) {
-            console.log('in if useEffect');
             return;
         }
         smartLaunch();

@@ -22,7 +22,6 @@ const Home = (): JSX.Element => {
     );
     const navigate = useNavigate();
 
-    console.log('Home');
     useEffect(() => {
         if (error) {
             setErrorSnackbar('Failed to get patient data');
