@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import App from 'app';
 
 const StandaloneWrapper = (): JSX.Element => {
-    const initialized = useRef(true); // Check if react already rendered this component
+    const initialized = useRef(false); // Check if react already rendered this component
 
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<any>(null);
@@ -16,11 +16,11 @@ const StandaloneWrapper = (): JSX.Element => {
         // Epic does not allow init twice (token request returns 400)
         // React in development renders twice (StrictMode) so we need a flag
         if (initialized.current) {
-            initialized.current = false;
             console.log('in if useEffect');
             return;
         }
         smartLaunch();
+        initialized.current = true;
     }, []);
 
     const smartLaunch = async (): Promise<void> => {
