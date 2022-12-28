@@ -5,14 +5,14 @@ import Home from './pages/home/home';
 import ResponseView from './pages/response_view/response_view';
 
 export const routes = {
-    root: '/',
+    root: '',
     assignedList: '/assigned-list',
     filledList: '/filled-list',
     responseView: '/filled-list/:responseId/view'
 };
 
 const AppRouter = (): JSX.Element => (
-    <HashRouter>
+    <HashRouter basename={process.env.REACT_APP_REPO_NAME}>
         <Routes>
             <Route path={routes.root} element={<Home />} />
             <Route path={routes.assignedList} element={<FormsList status="ready" sort="-authored-on" />} />
