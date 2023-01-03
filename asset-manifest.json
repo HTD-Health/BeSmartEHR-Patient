@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/BeSmartEhR-Patient/static/js/main.106331a7.js",
+    "main.js": "/BeSmartEhR-Patient/static/js/main.dcc8dcfe.js",
     "static/js/787.8f52f6da.chunk.js": "/BeSmartEhR-Patient/static/js/787.8f52f6da.chunk.js",
     "index.html": "/BeSmartEhR-Patient/index.html",
-    "main.106331a7.js.map": "/BeSmartEhR-Patient/static/js/main.106331a7.js.map",
+    "main.dcc8dcfe.js.map": "/BeSmartEhR-Patient/static/js/main.dcc8dcfe.js.map",
     "787.8f52f6da.chunk.js.map": "/BeSmartEhR-Patient/static/js/787.8f52f6da.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.106331a7.js"
+    "static/js/main.dcc8dcfe.js"
   ]
 }
